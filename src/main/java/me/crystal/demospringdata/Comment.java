@@ -4,6 +4,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.ManyToOne;
+import javax.persistence.criteria.CriteriaBuilder;
 
 @Entity
 public class Comment {
@@ -13,6 +14,17 @@ public class Comment {
     private Long id;
 
     private String comment;
+
+
+    private Integer likeCount = 0;
+
+    public Integer getLikeCount() {
+        return likeCount;
+    }
+
+    public void setLikeCount(Integer likeCount) {
+        this.likeCount = likeCount;
+    }
 
     @ManyToOne
     private Post post;

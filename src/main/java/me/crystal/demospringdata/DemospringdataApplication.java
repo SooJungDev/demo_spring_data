@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Import;
 import javax.persistence.Id;
 
 @SpringBootApplication
-@Import(SoojungRegistrar.class)
+//@Import(SoojungRegistrar.class)
 public class DemospringdataApplication {
 
     public static void main(String[] args) {
